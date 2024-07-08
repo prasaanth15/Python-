@@ -1,0 +1,23 @@
+class Student:
+    def __init__(self, name, subject1, subject2):
+        self.name = name
+        self.subject1 = subject1
+        self.subject2 = subject2
+    
+    def average(self):
+        return (self.subject1 + self.subject2) / 2
+
+# Function to get student details from user
+def get_student_details(student_number):
+    name = input(f"Enter the name of student {student_number}: ")
+    subject1 = float(input(f"Enter the marks for {name}'s first subject: "))
+    subject2 = float(input(f"Enter the marks for {name}'s second subject: "))
+    return Student(name, subject1, subject2)
+
+# Get details for two students
+student1 = get_student_details(1)
+student2 = get_student_details(2)
+
+# Calculate and print average marks for each student
+print(f"Average marks scored by {student1.name}: {student1.average()}")
+print(f"Average marks scored by {student2.name}: {student2.average()}")
