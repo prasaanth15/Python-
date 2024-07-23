@@ -1,0 +1,15 @@
+month = input("Enter the month: ").capitalize()
+day = int(input("Enter the date: "))
+
+
+if month in ["March", "April", "May"] or (month == "June" and day < 21):
+    season = "Spring"
+elif month in ["June", "July", "August"] or (month == "September" and day < 22):
+    season = "Summer"
+elif month in ["September", "October", "November"] or (month == "December" and day < 21):
+    season = "Fall"
+else:
+    season = "Winter"
+
+
+print(f"The season is currently {season}")
