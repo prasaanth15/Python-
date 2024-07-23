@@ -1,0 +1,10 @@
+import datetime
+
+
+date = datetime.date(2019, 8, 31)
+
+
+day_of_week = date.strftime("%A")
+
+
+print(day_of_week)  
