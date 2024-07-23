@@ -1,0 +1,13 @@
+binary_values = ['1101', '1011', '1001']
+
+
+max_binary = binary_values[0]
+
+
+for binary in binary_values[1:]:
+    
+    if int(binary, 2) > int(max_binary, 2):
+        max_binary = binary
+
+
+print(f"Maximum Number: {max_binary}")
