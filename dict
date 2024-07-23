@@ -1,0 +1,14 @@
+
+person_info = {
+    "name": "Alice",
+    "age": 30,
+    "gender": "Female",
+    "city": "New York"
+}
+
+
+dict_length = len(person_info)
+
+
+print("Person's Information:", person_info)
+print("Length of the Dictionary:", dict_length)
