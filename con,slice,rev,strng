@@ -1,0 +1,19 @@
+
+str1 = "Hello"
+str2 = "World"
+
+
+concatenated = str1 + str2
+print("Concatenated String:", concatenated)
+
+
+reversed_str = concatenated[::-1]
+print("Reversed String:", reversed_str)
+
+start = 1
+end = 8
+sliced_str = concatenated[start:end]
+print("Sliced String:", sliced_str)
+
+length = len(concatenated)
+print("Length of String:", length)
