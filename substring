@@ -1,0 +1,11 @@
+def is_substring(substring, string):
+    return substring in string
+
+
+main_string = "Hello, welcome to the world of Python!"
+substring_to_check = "world"
+
+if is_substring(substring_to_check, main_string):
+    print(f"'{substring_to_check}' is a substring of '{main_string}'.")
+else:
+    print(f"'{substring_to_check}' is not a substring of '{main_string}'.")
