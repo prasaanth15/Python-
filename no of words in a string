@@ -1,0 +1,11 @@
+
+input_string = input("Enter a string: ")
+
+
+words = input_string.split()
+
+
+num_words = len(words)
+
+
+print(f"The number of words in the string is: {num_words}")
