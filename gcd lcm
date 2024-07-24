@@ -1,0 +1,26 @@
+n = int(input("N value = "))
+
+
+num = int(input("Number 1 = "))
+
+
+current_gcd = num
+current_lcm = num
+
+
+for i in range(2, n + 1):
+    num = int(input(f"Number {i} = "))
+
+    
+    a = current_gcd
+    b = num
+    while b != 0:
+        a, b = b, a % b
+    current_gcd = a
+
+    
+    current_lcm = current_lcm * num // current_gcd
+
+
+print("GCD =", current_gcd)
+print("LCM =", current_lcm)
