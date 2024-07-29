@@ -1,0 +1,13 @@
+start = 1
+end = 100
+
+perfect_squares = []
+
+for num in range(start, end + 1):
+    root = int(num**0.5)
+    if root * root == num:
+        digit_sum = sum(int(digit) for digit in str(num))
+        if digit_sum < 10:
+            perfect_squares.append(num)
+
+print(f"Perfect squares between {start} and {end} with sum of digits less than 10: {perfect_squares}")
